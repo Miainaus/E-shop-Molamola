@@ -1,0 +1,124 @@
+.product {
+  padding: 20px 50px;
+  display: flex;
+  gap:50px;
+
+  .left {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    .images {
+      flex: 1;
+      img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+    .mainImg {
+       flex: 5;
+       img {
+        max-height: 800%;
+        width: 100%;
+        object-fit: cover;
+
+       }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .price {
+      font-size: 20px;
+      color: black;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      text-align: justify;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+      }
+    }
+    .add {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .link {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border:1px solid black;
+        padding:1px 60px;
+        cursor: pointer;
+        p {
+          font-size: 14px;
+          font-weight: 800;
+        }
+        &:hover {
+          background-color: gray;
+          color: white;
+        }
+      }
+    }
+    .overview {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 15px;
+      font-weight: 300;
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      font-weight: 300;
+      h4 {
+        font-size: 15px;
+        font-weight: 400;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.featuredProducts {
+  margin: 200px 120px;
+  margin-bottom:50px;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 12px;
+    margin-bottom:50px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+}
